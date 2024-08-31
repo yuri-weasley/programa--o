@@ -2,6 +2,17 @@ function sortear() {
     let quantidade = parseInt(document.getElementById('quantidade').value);
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
+    let intervaloPassado = (ate - de) + 1;
+
+    if(de >= ate) {
+        alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
+        return; /* Serve para que a função sortear() seja interrompida nesse ponto. */
+    } 
+
+    if(quantidade > intervaloPassado) {
+        alert('A quantidade de números é maior ou igual ao intervalo passado. Verifique os campos!');
+        return;
+    }
 
     let sorteados = [];
     let numero;
@@ -9,6 +20,7 @@ function sortear() {
     for(let i = 0; i < quantidade; i++) {
         numero = obterNumeroAleatorio(de, ate);
 
+        /* Proteção para que o número sorteado não se repita. */
         while(sorteados.includes(numero)) {
             numero = obterNumeroAleatorio(de, ate);
         }
