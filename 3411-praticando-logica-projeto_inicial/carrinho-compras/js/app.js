@@ -4,6 +4,7 @@ function adicionar() {
     let quantidade = document.getElementById('quantidade').value;
     let itensCarrinho = document.querySelector('.carrinho__produtos__produto');
     let totalParcial = 0;
+    let total = document.getElementById('valor-total');
 
     if (produto == 'Fone de ouvido - R$100') {
         precoProduto = 100;
@@ -16,5 +17,6 @@ function adicionar() {
     itensCarrinho.innerHTML = `<span class="texto-azul">${quantidade}x</span> ${produto} <span class="texto-azul"></span>`;
 
     totalParcial = quantidade * precoProduto;
+    total.textContent = totalParcial;
     
 }
