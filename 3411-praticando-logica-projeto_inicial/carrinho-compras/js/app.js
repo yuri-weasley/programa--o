@@ -1,5 +1,5 @@
 function adicionar() {
-    precoProduto = 0;
+    let precoProduto = 0;
     let produto = document.getElementById('produto').value;
     let quantidade = document.getElementById('quantidade').value;
     let itensCarrinho = document.querySelector('.carrinho__produtos__produto');
