@@ -16,7 +16,7 @@ function adicionar() {
     if (quantidade >= 1) {
         quantidade = quantidade;
         carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
-          <span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R$${preco}</span>
+          <span class="texto-azul">${quantidade}x</span>${nomeProduto}<span class="texto-azul">R$${preco}</span>
         </section>`;
         totalGeral += preco;
     } else if(quantidade < 1) {
@@ -26,7 +26,7 @@ function adicionar() {
     //atualizar o valor total.
     let campoTotal = document.getElementById('valor-total');
     campoTotal.textContent = `R$ ${totalGeral}`;
-    document.getElementById('quantidade').value = 0;
+    document.getElementById('quantidade').value = 0; //Nesse linha estou jogando o valor pra ser impresso no campo, a "quantidade" é uma variável que RECEBE o valor digitado.
 }
 
 function limpar() {
