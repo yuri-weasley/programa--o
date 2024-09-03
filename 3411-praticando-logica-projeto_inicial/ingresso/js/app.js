@@ -3,11 +3,23 @@ function comprar() {
     let qtd = parseInt(document.getElementById('qtd').value);
 
     if (tipo.value == 'pista') {
-        comprarPista(qtd);
+        if (qtd > 0) {
+            comprarPista(qtd);
+        } else {
+            alert('Digite uma quantidade válida.');
+        }
     } else if (tipo.value == 'superior') {
-        comprarSuperior(qtd);
+        if (qtd > 0) {
+            comprarSuperior(qtd);;
+        } else {
+            alert('Digite uma quantidade válida.');
+        }
     } else {
-        comprarInferior(qtd);
+        if (qtd > 0) {
+            comprarInferior(qtd);
+        } else {
+            alert('Digite uma quantidade válida.');
+        }
     }
 }
 
