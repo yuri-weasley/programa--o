@@ -6,11 +6,9 @@
     <title>Conversor de temperatura</title>
 </head>
 <body>
-    <p>Selecione a unidade de medida para a qual deseja converter o valor digitado no campo</p>
-    <input type="checkbox" name="°C" id="celsius">°C
-    <input type="checkbox" name="°F" id="farenheit">°F
-    <input type="number" name="temp" id="temp">
-    <input onclick="convertedor()" type="button" value="Converter">
+    Digite a temperatura: <input type="number" name="temp" id="temp">
+    <input onclick="converterParaCelsius()" type="button" value="Converter para °C">
+    <input onclick="converterParaFarenheit()" type="button" value="Converter para °F">
     <p id="text"></p>
 
     <script src="app.js"></script>

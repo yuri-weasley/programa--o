@@ -1,25 +1,35 @@
-let texto = document.getElementById('text');
+// function converterParaCelsius() {
+//     let texto = document.getElementById('text');
+//     let temp = document.getElementById('temp').value;
 
-function convertedor() {
-    let temp = document.getElementById('temp').value;
-    let celsius = document.getElementById('celsius');
-    let faren = document.getElementById('farenheit');
+//     let c = 0;
+//     c = ((temp - 32)*5)/9;
+//     texto.innerHTML = `A temperatura digitada corresponde a ${c}°C.`;
+// }
 
-    if (celsius) {
-        converterParaCelsius(temp);
-    } else if (faren) {
-        converterParaFarenheit(temp);
+// function converterParaFarenheit() {
+//     let texto = document.getElementById('text');
+//     let temp = document.getElementById('temp').value;
+
+//     let f = 0;
+//     f = ((9 * temp)/5) + 32;
+//     texto.innerHTML = `A temperatura digitada corresponde a ${f}°F.`;
+// }
+
+//Solução do Prof abaixo...
+
+
+function converterTemperatura(valor, escala) {
+    if (escala.toLowerCase() === 'celsius') {
+        return (valor * 9/5) + 32;  // Celsius para Fahrenheit
+    } else if (escala.toLowerCase() === 'fahrenheit') {
+        return (valor - 32) * 5/9;  // Fahrenheit para Celsius
+    } else {
+        return "Escala inválida";
     }
 }
 
-function converterParaCelsius(temp) {
-    let c;
-    c = ((temp - 32) * 5)/9;
-    texto.innerHTML = `A temperatura digitada corresponde a ${c}°C.`;
-}
-
-function converterParaFarenheit(temp) {
-    let f;
-    f = ((9 * temp) / 5) + 32;
-    texto.innerHTML = `A temperatura digitada corresponde a ${f}°F.`;
-}
+// Exemplo de uso
+let temperaturaCelsius = 25;
+let temperaturaFahrenheit = converterTemperatura(temperaturaCelsius, 'celsius');
+console.log(temperaturaFahrenheit);  // Saída esperada: 77
