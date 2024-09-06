@@ -16,10 +16,14 @@ function embaralha(novaLista) {
     }
 }
 
-function removerDuplicatas(novaLista) {
-    let i = novaLista.length;
-    let elemento = novaLista[i];
-}
+// Função para remover duplicatas de um array
+function removerDuplicatas(array) {
+    return [...new Set(array)];
+  }
+  
+  // Testando a função com novaLista
+  let novaListaSemDuplicatas = removerDuplicatas(novaLista);
+  console.log("Remover duplicatas:", novaListaSemDuplicatas);
 
 embaralha(novaLista);
 console.log(novaLista);
