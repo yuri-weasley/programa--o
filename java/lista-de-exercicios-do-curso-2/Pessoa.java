@@ -1,5 +1,6 @@
 public class Pessoa {
-    public static void main(String[] args) {
-        System.out.println("Olá, Mundo!");
-    }
+   String exibirMensagem() {
+    System.out.println("Olá, Mundo!");
+    return null;
+   }
 }
