@@ -8,6 +8,7 @@ public class ContaBancaria {
     }
 
     public double getSaldo() {
+        System.out.println("Saldo atual: " + saldo);
         return this.saldo;
     }
 
@@ -15,7 +16,29 @@ public class ContaBancaria {
         this.numeroConta = numeroConta;
     }
 
+    /*
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+    */
+
+    public void depositar(double valor) {
+        if (valor > 0) {
+            System.out.println("Depósito efetuado com sucesso!");
+            saldo += valor;
+            System.out.println("Saldo atualizado: " + saldo);
+        } else {
+            System.out.println("Digite um valor válido.");
+        }
+    }
+
+    public void sacar(double saque) {
+        if (saque <= saldo) {
+            System.out.println("Saque efetuado com sucesso!");
+            saldo -= saque;
+            System.out.println("Saldo atualizado " + saldo);
+        } else {
+            System.out.println("Saldo insuficiente para a operação digitada.");
+        }
     }
 }
