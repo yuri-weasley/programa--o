@@ -1,4 +1,4 @@
-public class Livro {
+public class Livro implements Calculavel {
     private String titulo;
     private String autor;
 
@@ -18,5 +18,9 @@ public class Livro {
 
     public void exibirDetalhes() {
         System.out.println("Livro: " + titulo + " de " + autor);
+    }
+    @Override
+    public double calcularPrecoFinal() {
+        return preco * 0.9;
     }
 }
