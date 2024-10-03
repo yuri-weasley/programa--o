@@ -11,7 +11,7 @@ public class Tabuada {
             System.out.println("Tabuada de: " + numero);
 
             for (int multi = 1; multi <= 10; multi++) {
-                System.out.println(numero + " x " + multi + " = " + numero*multi);
+                System.out.println(numero + " x " + multi + " = " + numero * multi);
             }
             break;
         }
