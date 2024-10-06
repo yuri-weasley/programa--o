@@ -12,7 +12,7 @@ public class Principal {
         listaDePessoas.add(pessoa2);
         listaDePessoas.add(pessoa3);
 
-        System.out.println("Tamanha do Array: " listaDePessoas.size());
+        System.out.println("Tamanha do Array: " + listaDePessoas.size());
 
         System.out.println("O primeiro da lista é: " + listaDePessoas.get(0));
 
