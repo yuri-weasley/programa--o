@@ -14,6 +14,14 @@ public class TesteProduto {
         listaProdutos.add(produto2);
         listaProdutos.add(produto3);
 
+        double somaPrecos = 0;
+            for (Produto produto: listaProdutos) {
+                somaPrecos += produto.getPreco();
+            }
+        
+        double precoMedio = somaPrecos / listaProdutos.size();
+            System.out.println("O preço médio dos produtos é: R$ " + precoMedio);
+
         System.out.println("Tamanho da lista: " + listaProdutos.size());
         System.out.println("O segundo produto da lista é: " + listaProdutos.get(1).getNome());
 
