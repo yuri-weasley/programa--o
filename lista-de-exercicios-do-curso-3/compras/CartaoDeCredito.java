@@ -34,6 +34,4 @@ public class CartaoDeCredito {
     public List<Compra> getCompras() {
         return compras;
     }
-
-    
 }

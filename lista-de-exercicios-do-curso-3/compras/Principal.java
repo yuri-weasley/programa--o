@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-         Scanner leitura = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
         System.out.println("Digite o limite do cartão: ");
         double limite = leitura.nextDouble();
         CartaoDeCredito cartao = new CartaoDeCredito(limite);
