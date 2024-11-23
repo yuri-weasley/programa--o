@@ -10,7 +10,7 @@
 
 2ª pasta - logica-programacao-js-curso02: projeto de número secreto desenvolvido no curso "Lógica de programação: explore funções e listas", com a Mônica Hillman e o Guilherme Lima;
 
-3ª pasta - logica-programacao-prasticas: projetos de práticas feitos no curso "Lógica de programação: praticando com desafios", com os instrutores Rodrigo Ferreira e Jacqueline Oliveira;
+3ª pasta - logica-programacao-praticas: projetos de práticas feitos no curso "Lógica de programação: praticando com desafios", com os instrutores Rodrigo Ferreira e Jacqueline Oliveira;
 
 - Formação "Aprenda a programar em Java com Orientação a Objetos"
 
