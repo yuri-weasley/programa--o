@@ -12,7 +12,12 @@
 
 3ª pasta - logica-programacao-praticas: projetos de práticas feitos no curso "Lógica de programação: praticando com desafios", com os instrutores Rodrigo Ferreira e Jacqueline Oliveira;
 
-- Formação "Aprenda a programar em Java com Orientação a Objetos"
+- Pasta "java" - pasta que contém os arquivos da formação "Sua trilha completa de carreira em Java na Alura":
 
-1ª pasta - 
+lista-de-exercícios-do-curso-1: exercícios feitos no curso de "Java: criando a sua primeira aplicação";
+
+lista-de-exercícios-do-curso-2: exercícios feitos no curso de "Java: aplicando a Orientação a Objetos";
+
+lista-de-exercícios-do-curso-3: exercícios feitos no curso de "Java: trabalhando com listas e coleções de dados";
+
  
