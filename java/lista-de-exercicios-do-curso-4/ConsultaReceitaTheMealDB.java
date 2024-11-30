@@ -5,19 +5,18 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 
-public class Livraria {
-    public static void main(String[] args) throws IOException, InterruptedException {
-        Scanner leitor = new Scanner(System.in);
-        System.out.println("Digite um livro que queira buscar: ");
-        String busca = leitor.nextLine();
+public class ConsultaReceitaTheMealDB {
 
-        String chave = "AIzaSyDn047gjqMRnFQZIPRaYwyfB2NzvSPzCBY";
-        String endereco = "https://www.googleapis.com/books/v1/volumes?q=" + busca + "&key=" + chave;
+    public static void main(String[] args) throws IOException, InterruptedException {
+        Scanner leitura = new Scanner(System.in);
+        System.out.println("Digite o nome da receita para a busca: ");
+        var nomeReceita = leitura.nextLine();
+
+        String endereco = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + nomeReceita;
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(endereco)).build();
-
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString()); 
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         System.out.println(response.body());
     }
